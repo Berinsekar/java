@@ -12,3 +12,31 @@ Arithmetic
         }
     }
 }
+
+Array
+public class Array{
+    public static void main(String[] args) {
+        try {
+
+            int[] array = new int[3];
+            int value = array[3];
+            System.out.println("Value at index 3: " + value);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("ArrayIndexOutOfBoundsException caught: Index is out of bounds!");
+            e.printStackTrace();
+        }
+    }
+}
+nullpoint
+public class Exception {
+    public static void main(String[] args) {
+        try {
+            String str = null;
+
+            int length = str.length();
+        } catch (NullPointerException e) {
+            System.out.println("NullPointerException caught!");
+            e.printStackTrace();
+        }
+    }
+}
