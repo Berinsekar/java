@@ -1,0 +1,21 @@
+import java.util.*;
+
+class Sorted {
+    public static void main(String[] args) {
+        SortedSet<String> ts = new TreeSet<>();
+        ts.add("India");
+        ts.add("Australia");
+        ts.add("South Africa");
+        ts.add("India");
+
+        System.out.println(ts);
+        ts.remove("Australia");
+        System.out.println("Set after removing Australia: " + ts);
+
+        System.out.println("Iterating over set:");
+        Iterator<String> iterator = ts.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+    }
+}
